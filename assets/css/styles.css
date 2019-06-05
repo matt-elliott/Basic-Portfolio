@@ -3,6 +3,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    min-height: 100%:
+}
+
 /* RESETS */
 html, body, section, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
     margin: 0;
@@ -40,6 +44,10 @@ header {
 
 header .container {
     border: none;
+}
+
+.wrapper {
+    min-height: 100%;
 }
 
 header .logo {
@@ -91,7 +99,6 @@ header:after, header:before {
     font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     color: #4aaaa5;
     padding: 15px 25px 0;
-    /* margin-bottom: 15px; */
 }
 
 .container h2 + * {
