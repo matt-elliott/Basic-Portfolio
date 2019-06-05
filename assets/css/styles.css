@@ -3,10 +3,6 @@ html, body {
     height: 100%;
 }
 
-body {
-    min-height: 100%:
-}
-
 /* RESETS */
 html, body, section, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
     margin: 0;
@@ -63,23 +59,22 @@ header .logo h1 {
 
 header nav {
     float: right;
-    padding: 25px 0;
     font-size: 20px;
 }
 
 header nav li {
-    display: inline-block;
-    margin: 0 5px;
+    float: left;
+    /* display: inline-block; */
+    border-right: 2px solid #dddddd;
 }
 
-header nav li:after {
-    content: "|";
-    margin-left: 15px;
-    color: #efefef;
+header nav li a {
+    display: block;
+    padding: 29px 37px;
 }
 
-header nav li:last-of-type:after {
-    content: "";
+header nav li:last-of-type {
+    border-right: none;
 }
 
 header:after, header:before {
@@ -169,6 +164,11 @@ footer h6 {
     display: inline-block;
     margin: 15px;
     width: 300px;
+    overflow: hidden;
+}
+
+#portfolio .links-grid .grid-item a {
+    display: block;
 }
 
 #portfolio .links-grid .grid-item img {
@@ -185,4 +185,40 @@ footer h6 {
     padding: 10px;
     text-align: center;
     color: #fff;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+}
+
+/* TRANSITION RULES */
+header nav li a:hover,
+.logo:hover,
+.logo:hover h1,
+#about-me img:hover,
+#portfolio .links-grid .grid-item a:hover .grid-description
+ {
+    -webkit-transition: all 350ms ease-out 0s;
+    transition: all 350ms ease-out 0s;
+}
+header nav li a:hover {
+    color: #fff;
+    background: #4aaaa5;
+}
+
+.logo:hover {
+    background: #333;
+}
+
+.logo:hover h1 {
+    color: #4aaaa5;
+}
+
+#about-me img:hover {
+    -webkit-filter: blur(5px) grayscale(45%);
+    filter: blur(5px) grayscale(45%);
+}
+
+#portfolio .links-grid .grid-item a:hover .grid-description {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
