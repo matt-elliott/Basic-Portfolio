@@ -42,10 +42,6 @@ header .container {
     border: none;
 }
 
-.wrapper {
-    min-height: 100%;
-}
-
 header .logo {
     background: #4aaaa5;
     float: left;
@@ -64,7 +60,6 @@ header nav {
 
 header nav li {
     float: left;
-    /* display: inline-block; */
     border-right: 2px solid #dddddd;
 }
 
@@ -83,6 +78,10 @@ header:after, header:before {
     display: table;
 }
 
+.wrapper {
+    min-height: 100%;
+}
+{}
 .container {
     max-width: 960px;
     background: #ffffff;
