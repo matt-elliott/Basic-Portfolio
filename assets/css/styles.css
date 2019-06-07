@@ -35,7 +35,6 @@ body {
 header {
     background: #fff;
     border-bottom: #cccccc 2px solid;
-    margin-bottom: 50px;
 }
 
 header .container {
@@ -72,7 +71,8 @@ header nav li:last-of-type {
     border-right: none;
 }
 
-header:after, header:before {
+header:after,
+header:before {
     content: " ";
     clear: both;
     display: table;
@@ -81,12 +81,12 @@ header:after, header:before {
 .wrapper {
     min-height: 100%;
 }
-{}
+
 .container {
     max-width: 960px;
     background: #ffffff;
     border: 2px solid #dddddd;
-    margin: 0 auto 60px;
+    margin: 25px auto;
 }
 
 .container h2 {
@@ -144,6 +144,7 @@ footer h6 {
     font-size: 16px;
     padding: 5px;
     border: 2px solid #dddddd;
+    box-sizing: border-box;
 }
 
 #contact #submit {
@@ -158,6 +159,7 @@ footer h6 {
 #portfolio .links-grid {
     margin: -15px;
 }
+
 #portfolio .links-grid .grid-item {
     position: relative;
     display: inline-block;
@@ -201,6 +203,7 @@ header nav li a:hover,
     -webkit-transition: all 350ms ease-out 0s;
     transition: all 350ms ease-out 0s;
 }
+
 header nav li a:hover {
     color: #fff;
     background: #4aaaa5;
